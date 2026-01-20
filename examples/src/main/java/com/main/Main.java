@@ -1,6 +1,7 @@
 package com.main;
 
 
+import com.arrays.Duplicates;
 import com.arrays.TwoSum;
 
 import java.util.Arrays;
@@ -8,9 +9,19 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
          System.out.println("Hello and welcome!");
-         int[] numbers = {8,1,4,6,4};
-         int target = 11;
+
+         // Input values
+         int[] numbers = {4,2,5,5,1};
+         int target = 9;
+
+         // TwoSum problem
          int[] results = TwoSum.twoSum2(numbers, target);
          System.out.println("TwoSum Result - "+Arrays.toString(results));
+
+         // Duplicates problem
+         boolean duplicateExists = Duplicates.containsDuplicates3(numbers);
+         System.out.println("Duplicates Results - "+duplicateExists);
+
+
     }
 }
