@@ -1,6 +1,7 @@
 package com.main;
 
 
+import com.arrays.Anagram;
 import com.arrays.Duplicates;
 import com.arrays.TwoSum;
 
@@ -13,6 +14,8 @@ public class Main {
          // Input values
          int[] numbers = {4,2,5,5,1};
          int target = 9;
+         String s = "anagram";
+         String t = "nagaram";
 
          // TwoSum problem
          int[] results = TwoSum.twoSum2(numbers, target);
@@ -22,6 +25,8 @@ public class Main {
          boolean duplicateExists = Duplicates.containsDuplicates3(numbers);
          System.out.println("Duplicates Results - "+duplicateExists);
 
-
+         // Anagram problem
+        boolean isAnagram = Anagram.isAnagram3(s, t);
+        System.out.println("Anagram Results - "+isAnagram);
     }
 }
