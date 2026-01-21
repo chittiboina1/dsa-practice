@@ -3,9 +3,11 @@ package com.main;
 
 import com.arrays.Anagram;
 import com.arrays.Duplicates;
+import com.arrays.GroupAnagrams;
 import com.arrays.TwoSum;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,6 +18,8 @@ public class Main {
          int target = 9;
          String s = "anagram";
          String t = "nagaram";
+
+         String[] strs = {"act","pots","tops","cat","stop","hat"};
 
          // TwoSum problem
          int[] results = TwoSum.twoSum2(numbers, target);
@@ -28,5 +32,9 @@ public class Main {
          // Anagram problem
         boolean isAnagram = Anagram.isAnagram3(s, t);
         System.out.println("Anagram Results - "+isAnagram);
+
+        // Group Anagrams problem
+        List<List<String>> outputList = GroupAnagrams.groupAnagrams2(strs);
+        System.out.println("Group Anagrams Results - "+outputList);
     }
 }
