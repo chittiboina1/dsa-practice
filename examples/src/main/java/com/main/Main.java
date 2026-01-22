@@ -1,10 +1,7 @@
 package com.main;
 
 
-import com.arrays.Anagram;
-import com.arrays.Duplicates;
-import com.arrays.GroupAnagrams;
-import com.arrays.TwoSum;
+import com.arrays.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -14,8 +11,9 @@ public class Main {
          System.out.println("Hello and welcome!");
 
          // Input values
-         int[] numbers = {4,2,5,5,1};
+         int[] numbers = {4,2,5,5,2};
          int target = 9;
+         int k = 2;
          String s = "anagram";
          String t = "nagaram";
 
@@ -36,5 +34,9 @@ public class Main {
         // Group Anagrams problem
         List<List<String>> outputList = GroupAnagrams.groupAnagrams2(strs);
         System.out.println("Group Anagrams Results - "+outputList);
+
+        // Top K Frequent Elements problem
+        int[] outputArray = TopKFrequentElements.topKFrequent2(numbers,k);
+        System.out.println("Top K Frequent Elements Results - "+Arrays.toString(outputArray));
     }
 }
