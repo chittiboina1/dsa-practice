@@ -11,7 +11,7 @@ public class Main {
          System.out.println("Hello and welcome!");
 
          // Input values
-         int[] numbers = {4,2,5,5,2};
+         int[] numbers = {4,2,5,1,2};
          int target = 9;
          int k = 2;
          String s = "anagram";
@@ -38,5 +38,9 @@ public class Main {
         // Top K Frequent Elements problem
         int[] outputArray = TopKFrequentElements.topKFrequent2(numbers,k);
         System.out.println("Top K Frequent Elements Results - "+Arrays.toString(outputArray));
+
+        // Products of Array Except Self problem
+        int[] productArray = ProductsOfArray.productExceptSelf3(numbers);
+        System.out.println("Products of Array Except Self Results - "+Arrays.toString(productArray));
     }
 }
