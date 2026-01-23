@@ -16,6 +16,7 @@ public class Main {
          int k = 2;
          String s = "anagram";
          String t = "nagaram";
+         String longSubstring = "zxyzxyz";
 
          String[] strs = {"act","pots","tops","cat","stop","hat"};
 
@@ -42,5 +43,11 @@ public class Main {
         // Products of Array Except Self problem
         int[] productArray = ProductsOfArray.productExceptSelf3(numbers);
         System.out.println("Products of Array Except Self Results - "+Arrays.toString(productArray));
+
+        // Longest Substring without duplicates problem
+        int longestCount = LongestSubString.lengthOfLongestSubstring3(longSubstring);
+        System.out.println("Longest Substring Without Duplicates Results - "+longestCount);
+
+
     }
 }
