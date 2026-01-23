@@ -17,6 +17,7 @@ public class Main {
          String s = "anagram";
          String t = "nagaram";
          String longSubstring = "zxyzxyz";
+         String palindromeString = "A man, a plan, a canal: Panama";
 
          String[] strs = {"act","pots","tops","cat","stop","hat"};
 
@@ -48,6 +49,9 @@ public class Main {
         int longestCount = LongestSubString.lengthOfLongestSubstring3(longSubstring);
         System.out.println("Longest Substring Without Duplicates Results - "+longestCount);
 
+        // Valid Palindrome problem
+        boolean valid = Palindrome.isPalindrome2(palindromeString);
+        System.out.println("Valid Palindrome Results - "+valid);
 
     }
 }
