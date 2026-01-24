@@ -12,12 +12,13 @@ public class Main {
 
          // Input values
          int[] numbers = {4,2,5,1,2};
-         int target = 9;
+         int target = 6;
          int k = 2;
          String s = "anagram";
          String t = "nagaram";
          String longSubstring = "zxyzxyz";
          String palindromeString = "A man, a plan, a canal: Panama";
+         int[] twoNumbers = {2,3,4};
 
          String[] strs = {"act","pots","tops","cat","stop","hat"};
 
@@ -52,6 +53,10 @@ public class Main {
         // Valid Palindrome problem
         boolean valid = Palindrome.isPalindrome2(palindromeString);
         System.out.println("Valid Palindrome Results - "+valid);
+
+        // Two Sum II Input Array Sorted problem
+        int[] twoSumRes = TwoSumII.twoSum1(twoNumbers, target);
+        System.out.println("Two Sum II Results - "+Arrays.toString(twoSumRes));
 
     }
 }
