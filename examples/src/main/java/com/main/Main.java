@@ -21,6 +21,7 @@ public class Main {
          int[] twoNumbers = {2,3,4};
          int[] threeSumNums = {-1,0,1,2,-1,-4};
          int[] heights = {1,7,2,5,4,7,3,6};
+         int[] prices = {10,1,5,6,7,1};
 
          String[] strs = {"act","pots","tops","cat","stop","hat"};
 
@@ -67,6 +68,10 @@ public class Main {
         // Container with Most Water problem
         int maxArea = ContainerWithMostWater.maxArea2(heights);
         System.out.println("Container with Most Water Results - "+maxArea);
+
+        // Best time to Buy and Sell Stocks problem
+        int maxProfit = BestTimeToSellAndBuyStocks.maxProfit3(prices);
+        System.out.println("Best time to Buy and Sell Stocks Results - "+maxProfit);
 
     }
 }
