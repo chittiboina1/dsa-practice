@@ -20,6 +20,7 @@ public class Main {
          String palindromeString = "A man, a plan, a canal: Panama";
          int[] twoNumbers = {2,3,4};
          int[] threeSumNums = {-1,0,1,2,-1,-4};
+         int[] heights = {1,7,2,5,4,7,3,6};
 
          String[] strs = {"act","pots","tops","cat","stop","hat"};
 
@@ -62,6 +63,10 @@ public class Main {
         // 3 Sum problem
         List<List<Integer>> threeSumRes = ThreeSum.threeSum2(threeSumNums);
         System.out.println("Three Sum Results - "+threeSumRes);
+
+        // Container with Most Water problem
+        int maxArea = ContainerWithMostWater.maxArea2(heights);
+        System.out.println("Container with Most Water Results - "+maxArea);
 
     }
 }
