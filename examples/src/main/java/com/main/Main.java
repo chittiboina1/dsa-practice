@@ -73,5 +73,8 @@ public class Main {
         int maxProfit = BestTimeToSellAndBuyStocks.maxProfit3(prices);
         System.out.println("Best time to Buy and Sell Stocks Results - "+maxProfit);
 
+        // Calling Stack Main class for all stack related problems
+        StackMain.executeAll();
+
     }
 }
