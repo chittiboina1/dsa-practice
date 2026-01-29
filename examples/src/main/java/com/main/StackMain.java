@@ -1,8 +1,11 @@
 package com.main;
 
 import com.arrays.BestTimeToSellAndBuyStocks;
+import com.stack.DailyTemperatures;
 import com.stack.MinStack;
 import com.stack.ValidParentheses;
+
+import java.util.Arrays;
 
 public class StackMain {
     /**
@@ -10,6 +13,7 @@ public class StackMain {
      */
     public static void executeAll(){
         String s = "[{(}]";
+        int[] temps = {30,38,30,36,35,40,28};
 
 
         // Valid Parentheses problem
@@ -27,5 +31,10 @@ public class StackMain {
         minStack.getMin(); // return 1
 
         System.out.println("Min Stack Results - "+minStack.getMin());
+
+        // Daily Temperatures problem
+        int[] output = DailyTemperatures.dailyTemperatures2(temps);
+        System.out.println("Daily Temperatures Results - "+ Arrays.toString(output));
+
     }
 }
