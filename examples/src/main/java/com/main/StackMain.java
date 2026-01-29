@@ -2,6 +2,7 @@ package com.main;
 
 import com.arrays.BestTimeToSellAndBuyStocks;
 import com.stack.DailyTemperatures;
+import com.stack.EvaluateRPN;
 import com.stack.MinStack;
 import com.stack.ValidParentheses;
 
@@ -14,6 +15,7 @@ public class StackMain {
     public static void executeAll(){
         String s = "[{(}]";
         int[] temps = {30,38,30,36,35,40,28};
+        String[] tokens = {"1","2","+","3","*","4","-"};
 
 
         // Valid Parentheses problem
@@ -34,7 +36,10 @@ public class StackMain {
 
         // Daily Temperatures problem
         int[] output = DailyTemperatures.dailyTemperatures2(temps);
-        System.out.println("Daily Temperatures Results - "+ Arrays.toString(output));
+        System.out.println("Daily Temperatures Results - "+Arrays.toString(output));
 
+        // Evaluate RPN problem
+        int value = EvaluateRPN.evalRPN(tokens);
+        System.out.println("Evaluate RPN Results - "+value);
     }
 }
