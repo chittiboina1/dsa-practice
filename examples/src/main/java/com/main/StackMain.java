@@ -1,10 +1,7 @@
 package com.main;
 
 import com.arrays.BestTimeToSellAndBuyStocks;
-import com.stack.DailyTemperatures;
-import com.stack.EvaluateRPN;
-import com.stack.MinStack;
-import com.stack.ValidParentheses;
+import com.stack.*;
 
 import java.util.Arrays;
 
@@ -16,6 +13,8 @@ public class StackMain {
         String s = "[{(}]";
         int[] temps = {30,38,30,36,35,40,28};
         String[] tokens = {"1","2","+","3","*","4","-"};
+        int[] nums1 = {4,1,2};
+        int[] nums2 = {1,3,4,2};
 
 
         // Valid Parentheses problem
@@ -41,5 +40,9 @@ public class StackMain {
         // Evaluate RPN problem
         int value = EvaluateRPN.evalRPN(tokens);
         System.out.println("Evaluate RPN Results - "+value);
+
+        // Next Greater Element 1 problem
+        int[] result = NextGreaterElement1.nextGreaterElement1(nums1, nums2);
+        System.out.println("Next Greater Element 1 Results - "+Arrays.toString(result));
     }
 }
