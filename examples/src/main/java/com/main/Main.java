@@ -76,5 +76,8 @@ public class Main {
         // Calling Stack Main class for all stack related problems
         StackMain.executeAll();
 
+        // Calling Binary Main class for all binary search related problems
+        BinaryMain.executeAll();
+
     }
 }
