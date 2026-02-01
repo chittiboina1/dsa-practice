@@ -15,6 +15,9 @@ public class StackMain {
         String[] tokens = {"1","2","+","3","*","4","-"};
         int[] nums1 = {4,1,2};
         int[] nums2 = {1,3,4,2};
+        int target = 10;
+        int[] position = {4,1,0,7};
+        int[] speed = {2,2,1,1};
 
 
         // Valid Parentheses problem
@@ -44,5 +47,10 @@ public class StackMain {
         // Next Greater Element 1 problem
         int[] result = NextGreaterElement1.nextGreaterElement1(nums1, nums2);
         System.out.println("Next Greater Element 1 Results - "+Arrays.toString(result));
+
+
+        // Car Fleet problem
+        int fleets = CarFleet.carFleet2(target, position, speed);
+        System.out.println("Car Fleets Results - "+fleets);
     }
 }

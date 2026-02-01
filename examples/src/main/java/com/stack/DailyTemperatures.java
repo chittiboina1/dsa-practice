@@ -1,5 +1,6 @@
 package com.stack;
 
+import java.util.Random;
 import java.util.Stack;
 
 public class DailyTemperatures {
