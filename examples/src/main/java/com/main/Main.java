@@ -79,5 +79,8 @@ public class Main {
         // Calling Binary Main class for all binary search related problems
         BinaryMain.executeAll();
 
+        // Calling Linked Main class for all linked list related problems
+        LinkedMain.executeAll();
+
     }
 }
