@@ -1,6 +1,7 @@
 package com.main;
 
 import com.linkedlist.ListNode;
+import com.linkedlist.MergeTwoSortedLists;
 import com.linkedlist.ReverseLinkedList;
 
 public class LinkedMain {
@@ -10,10 +11,19 @@ public class LinkedMain {
      */
     public static void executeAll(){
         ListNode head = new ListNode(2, new ListNode(6, new ListNode(4, new ListNode(8, null))));
+        ListNode list1 = new ListNode(2, new ListNode(4, new ListNode(6, new ListNode(8, null))));
+        ListNode list2 = new ListNode(1, new ListNode(5, new ListNode(7,null)));
 
         // Reverse Linked List Problem
         ListNode newHead = ReverseLinkedList.reverseList2(head);
+        System.out.println("Reverse Linked List Results - ");
         printListRecursive(newHead);
+
+        // Merge Two Sorted Lists Problem
+        ListNode node = MergeTwoSortedLists.mergeTwoLists2(list1, list2);
+        System.out.println();
+        System.out.println("Merge Two Sorted Lists Results - ");
+        printListRecursive(node);
 
     }
 
