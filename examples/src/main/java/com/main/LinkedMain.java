@@ -1,9 +1,6 @@
 package com.main;
 
-import com.linkedlist.LinkedListCycle;
-import com.linkedlist.ListNode;
-import com.linkedlist.MergeTwoSortedLists;
-import com.linkedlist.ReverseLinkedList;
+import com.linkedlist.*;
 
 public class LinkedMain {
 
@@ -15,7 +12,7 @@ public class LinkedMain {
         ListNode list1 = new ListNode(2, new ListNode(4, new ListNode(6, new ListNode(8, null))));
         ListNode list2 = new ListNode(1, new ListNode(5, new ListNode(7,null)));
         ListNode cycle = new ListNode(3, new ListNode(2, new ListNode(0, new ListNode(-4, null))));
-
+        ListNode cycleII = new ListNode(-4, new ListNode(0, new ListNode(2, new ListNode(3, null))));
 
         // Reverse Linked List Problem
         ListNode newHead = ReverseLinkedList.reverseList2(head);
@@ -33,6 +30,13 @@ public class LinkedMain {
         boolean hasCycle = LinkedListCycle.hasCycle2(cycle);
         System.out.println();
         System.out.println("Linked List Cycle Results - "+hasCycle);
+
+
+        // Linked List Cycle II Problem
+        ListNode detectCycle = LinkedListCycleII.detectCycle(cycleII);
+        System.out.println();
+        System.out.println("Linked List Cycle II Results - ");
+        printListRecursive(detectCycle);
 
     }
 
