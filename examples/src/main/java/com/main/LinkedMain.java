@@ -11,8 +11,12 @@ public class LinkedMain {
         ListNode head = new ListNode(2, new ListNode(6, new ListNode(4, new ListNode(8, null))));
         ListNode list1 = new ListNode(2, new ListNode(4, new ListNode(6, new ListNode(8, null))));
         ListNode list2 = new ListNode(1, new ListNode(5, new ListNode(7,null)));
-        ListNode cycle = new ListNode(3, new ListNode(2, new ListNode(0, new ListNode(-4, null))));
-        ListNode cycleII = new ListNode(-4, new ListNode(0, new ListNode(2, new ListNode(3, null))));
+        ListNode cycle = new ListNode(3, new ListNode(2, new ListNode(0, new ListNode(-4)))) {{
+            next.next.next.next = next; // Reaches from 1 -> 4 and links it back to 1's next (node 2)
+        }};
+        ListNode cycleII = new ListNode(1, new ListNode(2)) {{
+            next.next = next;
+        }};
 
         // Reverse Linked List Problem
         ListNode newHead = ReverseLinkedList.reverseList2(head);
@@ -35,9 +39,7 @@ public class LinkedMain {
         // Linked List Cycle II Problem
         ListNode detectCycle = LinkedListCycleII.detectCycle(cycleII);
         System.out.println();
-        System.out.println("Linked List Cycle II Results - ");
-        printListRecursive(detectCycle);
-
+        System.out.println("Linked List Cycle II Results - "+detectCycle.val);
     }
 
     /**

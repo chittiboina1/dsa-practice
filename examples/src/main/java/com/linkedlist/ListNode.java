@@ -8,7 +8,7 @@ public class ListNode {
     ListNode() {}
 
     // Constructor to set the value
-    ListNode(int val) {
+    public ListNode(int val) {
         this.val = val;
         this.next = null; // Next is by default null
     }
