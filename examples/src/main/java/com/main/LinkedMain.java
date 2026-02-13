@@ -18,7 +18,7 @@ public class LinkedMain {
             next.next = next;
         }};
         ListNode removedNthNodeList = new ListNode(2, new ListNode(6, new ListNode(4, null)));
-
+        ListNode oderList = new ListNode(1, new ListNode(6, new ListNode(8, new ListNode(9,null))));
 
 
         // Reverse Linked List Problem
@@ -50,6 +50,13 @@ public class LinkedMain {
         System.out.println();
         System.out.println("Remove Nth Node from End of List Results - ");
         printListRecursive(remainingList);
+
+
+        // Re-Oder LinkedList Problem
+        ReorderLinkedList.reorderList2(oderList);
+        System.out.println();
+        System.out.println("ReOder Linked List Results - ");
+        printListRecursive(oderList);
 
     }
 
