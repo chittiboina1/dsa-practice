@@ -17,6 +17,9 @@ public class LinkedMain {
         ListNode cycleII = new ListNode(1, new ListNode(2)) {{
             next.next = next;
         }};
+        ListNode removedNthNodeList = new ListNode(2, new ListNode(6, new ListNode(4, null)));
+
+
 
         // Reverse Linked List Problem
         ListNode newHead = ReverseLinkedList.reverseList2(head);
@@ -40,6 +43,14 @@ public class LinkedMain {
         ListNode detectCycle = LinkedListCycleII.detectCycle(cycleII);
         System.out.println();
         System.out.println("Linked List Cycle II Results - "+detectCycle.val);
+
+
+        // Remove Nth Node from End of List Problem
+        ListNode remainingList = RemoveNthNodeFromList.removeNthFromEnd2(removedNthNodeList, 2);
+        System.out.println();
+        System.out.println("Remove Nth Node from End of List Results - ");
+        printListRecursive(remainingList);
+
     }
 
     /**
