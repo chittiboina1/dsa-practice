@@ -19,7 +19,8 @@ public class LinkedMain {
         }};
         ListNode removedNthNodeList = new ListNode(2, new ListNode(6, new ListNode(4, null)));
         ListNode oderList = new ListNode(1, new ListNode(6, new ListNode(8, new ListNode(9,null))));
-
+        ListNode l1 = new ListNode(2, new ListNode(6, new ListNode(4, null)));
+        ListNode l2 = new ListNode(4, new ListNode(5, null));
 
         // Reverse Linked List Problem
         ListNode newHead = ReverseLinkedList.reverseList2(head);
@@ -58,6 +59,13 @@ public class LinkedMain {
         System.out.println("ReOder Linked List Results - ");
         printListRecursive(oderList);
 
+
+        // Add Two Numbers Problem
+        ListNode sum = AddTwoNumbers.addTwoNumbers2(l1, l2);
+        System.out.println();
+        System.out.println("Add Two Numbers Results - ");
+        printListRecursive(sum);
+
     }
 
     /**
@@ -69,5 +77,20 @@ public class LinkedMain {
             System.out.print(node.val + "->");
             printListRecursive(node.next);
         }
+    }
+
+    /**
+     * This method is used to print all the values in a circular linked list or list node.
+     * @param node
+     */
+    public static void printCircularList(ListNode node){
+        if(node == null){
+            return;
+        }
+        ListNode current = node;
+        do{
+            System.out.println(current.val + "->");
+            current = current.next;
+        }while(current!=node);
     }
 }
